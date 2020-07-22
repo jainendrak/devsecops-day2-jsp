@@ -9,5 +9,12 @@ stages {
 			sh 'mvn -v'
 			}
 		}
+	stage('build java project'){
+		steps {
+			sh 'mvn clean package'
+		
+		}
+	}
+		
    }
 }
